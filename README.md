@@ -1,2 +1,2 @@
-# learn-git
-learn-git Data Engineer Digital Skola Batch 16
+# learn-project
+learn-project Data Engineer Digital Skola Batch 16
