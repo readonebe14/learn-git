@@ -1,0 +1,1 @@
+Di proyek kedua saya membuat Business Intellingence. Saya memulai proyek pada 25 November 2023. Disini saya membuat ETL menggunakan Airbyte mengambil source data dari Postgre dan di push ke Datawarehouse yang saya buat yaitu Snowflake.
