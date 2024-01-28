@@ -1,0 +1,4 @@
+flask
+Jinja2
+pandas
+scikit-learn
