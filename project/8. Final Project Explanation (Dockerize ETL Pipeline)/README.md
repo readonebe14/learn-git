@@ -1,9 +1,11 @@
-**Introduction**
+# Final Project (Dockerize ETL Pipeline)
+
+## Introduction
 This final project is about Dockerize ETL Pipeline using ETL tools Airflow that extract
 Public API data from PIKOBAR, then load into MySQL (Staging Area) and finally
 aggregate the data and save into PostgreSQL.
 
-**Project Steps**
+## Project Steps
 1. Create Docker (MySQL, Airflow and PostgreSQL) in your local computer
 2. Create Database in MySQL and PostgreSQL
 3. Create Connection from Airflow to MySQL and PostgreSQL
