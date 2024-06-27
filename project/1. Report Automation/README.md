@@ -3,9 +3,7 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
 ## Description
-Proyek pertama membuat Report Automation. Saya memulai proyek pada 12 November 2023. Saya membuat source code Python menggunakan Google Colab dari use case sebagai berikut : 
-
-
+The first project is creating Report Automation. I started the project on November 12, 2023. I developed the Python source code using Google Colab from the use case provided in the following link: https://subscription.packtpub.com/book/programming/9781784398781/1/ch01lvl1sec15/case-study
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,7 +12,8 @@ Proyek pertama membuat Report Automation. Saya memulai proyek pada 12 November 2
 - [Credits](#credits)
 
 ## Installation
-Langkah-langkah untuk menginstal proyek ini:
+Steps to install the project:
+1. 
 
 ## Usage
 
@@ -22,5 +21,5 @@ Langkah-langkah untuk menginstal proyek ini:
 ## Contact
 Ridwan Bayu Erlangga - @readonebe14 - ridwanbayuerlangga@gmail.com
 
-Project Link: https://github.com/readonebe14/learn-project/tree/portfolio/project/1.%20Report%20Automation
+Project Link: [https://github.com/readonebe14/learn-project/tree/portfolio/project/1.%20Report%20Automation](https://github.com/readonebe14/learn-project/blob/portfolio/project/1.%20Report%20Automation/Project1%20-%20Report%20Automation.ipynb
 
