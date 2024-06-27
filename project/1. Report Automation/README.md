@@ -21,5 +21,5 @@ Steps to install the project:
 ## Contact
 Ridwan Bayu Erlangga - @readonebe14 - ridwanbayuerlangga@gmail.com
 
-Project Link: [https://github.com/readonebe14/learn-project/tree/portfolio/project/1.%20Report%20Automation](https://github.com/readonebe14/learn-project/blob/portfolio/project/1.%20Report%20Automation/Project1%20-%20Report%20Automation.ipynb
+Project Link: https://github.com/readonebe14/learn-project/blob/portfolio/project/1.%20Report%20Automation/Project1%20-%20Report%20Automation.ipynb
 
