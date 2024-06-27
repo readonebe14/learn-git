@@ -21,5 +21,6 @@ Steps to install :<br>
 ## Contact
 Ridwan Bayu Erlangga - @readonebe14 - ridwanbayuerlangga@gmail.com
 
-Project Link: https://github.com/readonebe14/learn-project/blob/portfolio/project/1.%20Report%20Automation/Project1%20-%20Report%20Automation.ipynb
+Project Link : <br>
+https://github.com/readonebe14/learn-project/blob/portfolio/project/1.%20Report%20Automation/Project1%20-%20Report%20Automation.ipynb
 
