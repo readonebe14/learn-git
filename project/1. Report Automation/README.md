@@ -12,7 +12,7 @@ The first project is creating Report Automation. I started the project on Novemb
 - [Credits](#credits)
 
 ## Installation
-Steps to install the project:
+Steps to install :
 1. 
 
 ## Usage
