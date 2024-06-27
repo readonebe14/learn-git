@@ -9,7 +9,6 @@ The first project is creating Report Automation. I started the project on Novemb
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contact](#contact)
-- [Credits](#credits)
 
 ## Installation
 Steps to install :<br>
