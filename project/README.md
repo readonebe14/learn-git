@@ -13,6 +13,7 @@ Demikian, Terima Kasih.<br>
 ## Tools
 - Python
 - Jupyter Notebook
+- Google Colab
 - PL/SQL Query
 - Github
 - VSCode
