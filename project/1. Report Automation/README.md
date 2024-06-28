@@ -5,10 +5,24 @@
 <style>
         pre {
             background-color: #f4f4f4;
-            padding: 10px;
+            padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
             overflow-x: auto;
+            position: relative;
+            margin: 20px 0;
+        }
+        pre::before {
+            content: attr(data-language);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            text-transform: uppercase;
         }
         code {
             font-family: 'Courier New', Courier, monospace;
@@ -31,13 +45,9 @@ Steps to install :<br>
 ## Usage
 ### 1. Create Constructor Parent & Child
 
-<body>
-<pre><code>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1.1.  Library Item (Constructor) - Parent</title>
-</head>
+
+1.1. Library Item (Constructor) - Parent
+<pre data-language="python"><code>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
     self.title = title
@@ -45,31 +55,39 @@ class LibraryItem():
     self.subject = subject
 </pre></code>
 1.2 Book (Constructor) - Child <br>
+<pre><code>
 class Book(LibraryItem):
   def __init__(self, title, upc, subject, isbn, authors, dds_number):
     LibraryItem.__init__(self,title, upc, subject)
     self.isbn = isbn
     self.authors = authors
     self.dds_number = dds_number
+</pre></code>
 1.3. Magazine (Constructor) - Child <br>
+<pre><code>
 class Magazine(LibraryItem):
     def __init__(self, title, upc, subject, volume, issue):
         LibraryItem.__init__(self,title, upc, subject)
         self.volume = volume
         self.issue = issue
+</pre></code>
 1.4. DVD (Constructor) - Child <br>
+<pre><code>
 class Dvd(LibraryItem):
     def __init__(self, title, upc, subject, actors, director,genre):
         LibraryItem.__init__(self,title, upc, subject)
         self.actors = actors
         self.director = director
         self.genre = genre
+</pre></code>
 1.5. CD (Constructor) - Child <br>
+<pre><code>
 class Cd(LibraryItem):
     def __init__(self, title, upc, subject, artist):
         LibraryItem.__init__(self,title, upc, subject)
         self.artist = artist
-
+</pre></code>
+        
 ### 2. Create Class Catalog
 
 
