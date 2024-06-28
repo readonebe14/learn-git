@@ -7,7 +7,7 @@ Demikian, Terima Kasih.<br>
 
 ## Table of Contents
 - [Tools](#tools)
-- [Project List](#projectlist(https://github.com/readonebe14/learn-project/blob/portfolio/project/README.md#project-list))
+- [Project List](#projectlist)
 - [Contact](#contact)
 
 ## Tools
