@@ -32,9 +32,12 @@ Steps to install :<br>
 ### 1. Create Constructor Parent & Child
 
 <body>
-<h1>1.1.  Library Item (Constructor) - Parent</h1>
-<p>1.1.  Library Item (Constructor) - Parent</p>
 <pre><code>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1.  Library Item (Constructor) - Parent</title>
+</head>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
     self.title = title
