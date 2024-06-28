@@ -268,9 +268,11 @@ for catalog in catalog_all:
                 print('Title:', item.title, 'Genre:', item.genre)
             elif type(item) == Cd:
                 print('Title:', item.title, 'Artist:', item.artist)
+</pre></code>
 
 ### 8. Catalog Search Method
 Menggunakan metode search dari kelas Catalog untuk mencari item berdasarkan input_search.
+<pre><code>
 Catalog(catalog_all).search(input_search)
 </pre></code>
         
