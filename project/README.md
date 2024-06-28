@@ -13,6 +13,8 @@ Demikian, Terima Kasih.<br>
 ## Tools
 - Python
 - Jupyter Notebook
+- PL/SQL Query
+- Github
 - VSCode
 - Postgres
 - Airbyte
@@ -20,6 +22,7 @@ Demikian, Terima Kasih.<br>
 - Snowflake
 - Docker
 - Kafka
+- Hadoop
 
 ## Project List
 1. Report Automation
