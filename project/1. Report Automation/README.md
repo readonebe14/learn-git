@@ -12,18 +12,6 @@
             position: relative;
             margin: 20px 0;
         }
-        pre::before {
-            content: attr(data-language);
-            position: absolute;
-            top: -10px;
-            left: 10px;
-            background: #333;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 12px;
-            text-transform: uppercase;
-        }
         code {
             font-family: 'Courier New', Courier, monospace;
             color: #d14;
@@ -35,26 +23,26 @@ The first project is creating Report Automation. I started the project on Novemb
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
+- [Explanation](#explanation)
 - [Contact](#contact)
 
 ## Installation
 Steps to install :<br>
 1. 
 
-## Usage
+## Explanation
 ### 1. Create Constructor Parent & Child
 
 
-1.1. Library Item (Constructor) - Parent
-<pre data-language="python"><code>
+#### 1.1. Library Item (Constructor) - Parent
+<pre><code>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
     self.title = title
     self.upc = upc
     self.subject = subject
 </pre></code>
-1.2 Book (Constructor) - Child <br>
+#### 1.2 Book (Constructor) - Child <br>
 <pre><code>
 class Book(LibraryItem):
   def __init__(self, title, upc, subject, isbn, authors, dds_number):
@@ -63,7 +51,7 @@ class Book(LibraryItem):
     self.authors = authors
     self.dds_number = dds_number
 </pre></code>
-1.3. Magazine (Constructor) - Child <br>
+#### 1.3. Magazine (Constructor) - Child <br>
 <pre><code>
 class Magazine(LibraryItem):
     def __init__(self, title, upc, subject, volume, issue):
@@ -71,7 +59,7 @@ class Magazine(LibraryItem):
         self.volume = volume
         self.issue = issue
 </pre></code>
-1.4. DVD (Constructor) - Child <br>
+#### 1.4. DVD (Constructor) - Child <br>
 <pre><code>
 class Dvd(LibraryItem):
     def __init__(self, title, upc, subject, actors, director,genre):
@@ -80,7 +68,7 @@ class Dvd(LibraryItem):
         self.director = director
         self.genre = genre
 </pre></code>
-1.5. CD (Constructor) - Child <br>
+#### 1.5. CD (Constructor) - Child <br>
 <pre><code>
 class Cd(LibraryItem):
     def __init__(self, title, upc, subject, artist):
@@ -91,6 +79,7 @@ class Cd(LibraryItem):
 ### 2. Create Class Catalog
 
 
+<pre><code>
 class Catalog():
     def __init__(self, catalog=None):
         self.catalog = catalog
@@ -110,11 +99,14 @@ class Catalog():
                     else:
                         pass
         return list_result
-
+</pre></code>
+        
 ### 3. Create Main
 
 
-<!--self, title, upc, subject, isbn, authors, dds_number-->
+#### 3.1. Main Book
+<pre><code>
+###self, title, upc, subject, isbn, authors, dds_number
 book1 = Book (
     'Anaconda',
     None,
@@ -139,10 +131,133 @@ book3 = Book (
     'Erlangga',
     '5423178542'
 )
+</pre></code>
 
-4. 
+#### 3.2. Main Magazine
+<pre><code>
+### title, upc, subject, volume, issue
+magazine1 = Magazine(
+    'Kompas',
+    None,
+    'Edisi November',
+    'Volume 1',
+    '-'
+)
+magazine2 = Magazine(
+    'Lampu Merah',
+    None,
+    'Edisi Oktober',
+    'Volume 2',
+    'Tidak Ada'
+)
+magazine3 = Magazine(
+    'Warta Kota',
+    None,
+    'Edisi Desember',
+    'Volume 3',
+    '-'
+)
+</pre></code>
+
+#### 3.3. Main DVD
+<pre><code>
+### title, upc, subject, actors, director, genre
+dvd1 = Dvd(
+    'Petualang Sherina',
+    None,
+    'Petualang Sherina Test',
+    'Sherina',
+    'Reza',
+    'Action'
+)
+dvd2 = Dvd(
+    'Mission Impossible',
+    None,
+    'Mission Imposible Test',
+    'Tom Cruise',
+    'George',
+    'Action'
+)
+dvd3 = Dvd(
+    'Tiga Dara',
+    None,
+    'Tiga Dara Test',
+    'Chitra',
+    'Jaya',
+    'Drama Romantic'
+)
+</pre></code>
+
+#### 3.3. Main CD
+<pre><code>
+### title, upc, subject, artist
+cd1 = Cd(
+    'Musik 90an',
+    None,
+    'Musik 90an Test',
+    'Pas Band'
+)
+cd2 = Cd(
+    'Dewa19',
+    None,
+    'Dewa 19 Test',
+    'Dewa 19'
+)
+</pre></code>
+
+#### 3.a. Checking Main after created
+<pre><code>
+print(book1)
+print(magazine1)
+print(dvd1)
+print(cd1)
+</pre></code>
+
+### 4. Collect Data of Each Type
 
 
+<pre><code>
+book = [book1, book2, book3]
+magazine = [magazine1, magazine2, magazine3]
+dvd =[dvd1, dvd2, dvd3]
+cd = [cd1, cd2]
+</pre></code>
+
+### 5. Collect All Data
+
+
+<pre><code>
+catalog_all = [book, magazine, dvd, cd]
+
+for catalog in catalog_all:
+    for item in catalog:
+        print(item.title)
+        print(item.subject)
+        print (type(item))
+        print('\n')
+</pre></code>
+
+### 6. Search
+
+
+<pre><code>
+input_search = 'Anaconda'
+
+for catalog in catalog_all:
+    for item in catalog:
+        if input_search.lower() in item.title.lower():
+            if type(item) == Magazine:
+                print('Title:', item.title, 'Volume', item.volume)
+            elif type(item) == Book:
+                print('Title:', item.title, 'DDS Number:', item.dds_number)
+            elif type(item) == Dvd:
+                print('Title:', item.title, 'Genre:', item.genre)
+            elif type(item) == Cd:
+                print('Title:', item.title, 'Artist:', item.artist)
+
+Catalog(catalog_all).search(input_search)
+</pre></code>
+        
 ## Contact
 Ridwan Bayu Erlangga - @readonebe14 - ridwanbayuerlangga@gmail.com
 
