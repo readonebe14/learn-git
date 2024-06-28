@@ -276,7 +276,10 @@ Catalog(catalog_all).search(input_search)
 </pre></code>
         
 ## Contact
-Ridwan Bayu Erlangga - @readonebe14 - ridwanbayuerlangga@gmail.com
+- Name          : Ridwan Bayu Erlangga 
+- Github        : @readonebe14 
+- Email         : ridwanbayuerlangga@gmail.com
+- LinkedIn      : [Ridwan Bayu Erlangga](https://www.linkedin.com/in/ridwanbayuerlangga/)
 
 Project Link : [Report Automation using Python](https://github.com/readonebe14/learn-project/blob/portfolio/project/1.%20Report%20Automation/Project1%20-%20Report%20Automation.ipynb)
 
