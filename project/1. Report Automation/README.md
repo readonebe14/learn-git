@@ -234,14 +234,13 @@ cd = [cd1, cd2]
 
 ### 5. Collect All Data
 Mengumpulkan semua item ke dalam satu daftar catalog_all.
-
 <pre><code>
 catalog_all = [book, magazine, dvd, cd]
 </pre></code>
 
 ### 6. Printing All Items
 Mencetak informasi semua item yang ada dalam catalog_all.
-</pre></code>
+<pre><code>
 for catalog in catalog_all:
     for item in catalog:
         print(item.title)
