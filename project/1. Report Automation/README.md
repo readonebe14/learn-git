@@ -2,6 +2,7 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
+<!--
 <style>
         pre {
             background-color: #f4f4f4;
@@ -17,6 +18,7 @@
             color: #d14;
         }
 </style>
+-->
 
 ## Description
 The first project is creating Report Automation. I started the project on November 12, 2023. I developed the Python source code using Google Colab from the use case provided in the following link: https://subscription.packtpub.com/book/programming/9781784398781/1/ch01lvl1sec15/case-study
@@ -28,13 +30,16 @@ The first project is creating Report Automation. I started the project on Novemb
 
 ## Installation
 Steps to install :<br>
-1. 
+#### 1. Python: Python 3.x version is recommended.
+#### 2. Jupyter Notebook: To run the notebook itself.
+<pre><code>
+pip install notebook
+</pre></code>
 
 ## Explanation
 ### 1. Create Constructor Parent & Child
-
-
 #### 1.1. Library Item (Constructor) - Parent
+Mendefinisikan kelas LibraryItem dengan atribut dasar title, upc, dan subject.
 <pre><code>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
@@ -43,6 +48,7 @@ class LibraryItem():
     self.subject = subject
 </pre></code>
 #### 1.2 Book (Constructor) - Child <br>
+Mendefinisikan kelas Book dengan atribut tambahan isbn, authors, dan dds_number.
 <pre><code>
 class Book(LibraryItem):
   def __init__(self, title, upc, subject, isbn, authors, dds_number):
@@ -52,6 +58,7 @@ class Book(LibraryItem):
     self.dds_number = dds_number
 </pre></code>
 #### 1.3. Magazine (Constructor) - Child <br>
+Mendefinisikan kelas Magazine dengan atribut tambahan volume dan issue.
 <pre><code>
 class Magazine(LibraryItem):
     def __init__(self, title, upc, subject, volume, issue):
@@ -60,6 +67,7 @@ class Magazine(LibraryItem):
         self.issue = issue
 </pre></code>
 #### 1.4. DVD (Constructor) - Child <br>
+Mendefinisikan kelas Dvd dengan atribut tambahan actors, director, dan genre.
 <pre><code>
 class Dvd(LibraryItem):
     def __init__(self, title, upc, subject, actors, director,genre):
@@ -69,6 +77,7 @@ class Dvd(LibraryItem):
         self.genre = genre
 </pre></code>
 #### 1.5. CD (Constructor) - Child <br>
+Mendefinisikan kelas Cd dengan atribut tambahan artist.
 <pre><code>
 class Cd(LibraryItem):
     def __init__(self, title, upc, subject, artist):
@@ -77,8 +86,7 @@ class Cd(LibraryItem):
 </pre></code>
         
 ### 2. Create Class Catalog
-
-
+Mendefinisikan kelas Catalog dengan metode search untuk mencari item berdasarkan input tertentu.
 <pre><code>
 class Catalog():
     def __init__(self, catalog=None):
@@ -101,8 +109,8 @@ class Catalog():
         return list_result
 </pre></code>
         
-### 3. Create Main
-
+### 3. Create Instance
+Membuat instance dari kelas Book, Magazine, Dvd, dan Cd dengan berbagai data contoh.
 
 #### 3.1. Main Book
 <pre><code>
@@ -206,6 +214,7 @@ cd2 = Cd(
 </pre></code>
 
 #### 3.a. Checking Main after created
+Mencetak informasi dari objek book1, magazine1, dan dvd1.
 <pre><code>
 print(book1)
 print(magazine1)
@@ -214,7 +223,7 @@ print(cd1)
 </pre></code>
 
 ### 4. Collect Data of Each Type
-
+Mengelompokkan item berdasarkan jenisnya (buku, majalah, dvd, cd).
 
 <pre><code>
 book = [book1, book2, book3]
@@ -224,11 +233,15 @@ cd = [cd1, cd2]
 </pre></code>
 
 ### 5. Collect All Data
-
+Mengumpulkan semua item ke dalam satu daftar catalog_all.
 
 <pre><code>
 catalog_all = [book, magazine, dvd, cd]
+</pre></code>
 
+### 6. Printing All Items
+Mencetak informasi semua item yang ada dalam catalog_all.
+</pre></code>
 for catalog in catalog_all:
     for item in catalog:
         print(item.title)
@@ -237,8 +250,9 @@ for catalog in catalog_all:
         print('\n')
 </pre></code>
 
-### 6. Search
-
+### 7. Search
+- Mendefinisikan variabel input_search dengan nilai "Anaconda".
+- Melakukan pencarian item dalam catalog_all yang sesuai dengan input_search dan mencetak informasi item tersebut.
 
 <pre><code>
 input_search = 'Anaconda'
@@ -255,6 +269,8 @@ for catalog in catalog_all:
             elif type(item) == Cd:
                 print('Title:', item.title, 'Artist:', item.artist)
 
+### 8. Catalog Search Method
+Menggunakan metode search dari kelas Catalog untuk mencari item berdasarkan input_search.
 Catalog(catalog_all).search(input_search)
 </pre></code>
         
