@@ -2,6 +2,20 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
+<style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d14;
+        }
+</style>
+
 ## Description
 The first project is creating Report Automation. I started the project on November 12, 2023. I developed the Python source code using Google Colab from the use case provided in the following link: https://subscription.packtpub.com/book/programming/9781784398781/1/ch01lvl1sec15/case-study
 
@@ -19,11 +33,13 @@ Steps to install :<br>
 
 
 1.1.  Library Item (Constructor) - Parent <br>
+<pre><code>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
     self.title = title
     self.upc = upc
     self.subject = subject
+</pre></code>
 1.2 Book (Constructor) - Child <br>
 class Book(LibraryItem):
   def __init__(self, title, upc, subject, isbn, authors, dds_number):
@@ -103,6 +119,7 @@ book3 = Book (
 )
 
 4. 
+
 
 ## Contact
 Ridwan Bayu Erlangga - @readonebe14 - ridwanbayuerlangga@gmail.com
