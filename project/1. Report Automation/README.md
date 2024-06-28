@@ -31,10 +31,10 @@ Steps to install :<br>
 ## Usage
 ### 1. Create Constructor Parent & Child
 
-
-
+<body>
+<h1>1.1.  Library Item (Constructor) - Parent</h1>
+<p>1.1.  Library Item (Constructor) - Parent</p>
 <pre><code>
-1.1.  Library Item (Constructor) - Parent <br>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
     self.title = title
