@@ -32,8 +32,9 @@ Steps to install :<br>
 ### 1. Create Constructor Parent & Child
 
 
-1.1.  Library Item (Constructor) - Parent <br>
+
 <pre><code>
+1.1.  Library Item (Constructor) - Parent <br>
 class LibraryItem():
   def __init__(self, title=None, upc=None, subject=None):
     self.title = title
