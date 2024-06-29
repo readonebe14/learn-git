@@ -29,9 +29,9 @@ In the second project I created Business Intelligence. I started the project on 
 - [Contact](#contact)
 
 ## Pre-Requisites
-#### 1. Install Postgres
-#### 2. Signup Airbyte
-#### 3. Signup Snowflake
+#### 1. Postgres
+#### 2. Airbyte
+#### 3. Snowflake
 
 ## Explanation
 ### 1. 
