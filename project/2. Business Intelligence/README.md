@@ -24,12 +24,11 @@
 In the second project I created Business Intelligence. I started the project on November 25 2023. Here I created ETL using Airbyte, took source data from Postgres and pushed it to the Datawarehouse that I created in Snowflake.
 
 ## Table of Contents
-- [Installation](#installation)
+- [Pre-requisites](#pre-requisites)
 - [Explanation](#explanation)
 - [Contact](#contact)
 
-## Installation
-Steps to install :<br>
+## Pre-Requisites
 #### 1. Install Postgres
 #### 2. Signup Airbyte
 #### 3. Signup Snowflake
