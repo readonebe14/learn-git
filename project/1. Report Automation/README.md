@@ -24,12 +24,11 @@
 The first project is creating Report Automation. I started the project on November 12, 2023. I developed the Python source code using Google Colab from the use case provided in the following link: https://subscription.packtpub.com/book/programming/9781784398781/1/ch01lvl1sec15/case-study
 
 ## Table of Contents
-- [Installation](#installation)
+- [Pre-requisites](#pre-requisites)
 - [Explanation](#explanation)
 - [Contact](#contact)
 
-## Installation
-Steps to install :<br>
+## Pre-requisites
 #### 1. Python: Python 3.x version is recommended.
 #### 2. Jupyter Notebook: To run the notebook itself.
 <pre><code>
