@@ -33,9 +33,6 @@ Steps to install :<br>
 #### 1. Install Postgres
 #### 2. Signup Airbyte
 #### 3. Signup Snowflake
-<pre><code>
-pip install notebook
-</pre></code>
 
 ## Explanation
 ### 1. 
