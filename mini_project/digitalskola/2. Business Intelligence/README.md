@@ -17,7 +17,7 @@
             font-family: 'Courier New', Courier, monospace;
             color: #d14;
         }
-        .center {
+        center {
             display: flex;
             justify-content: center;
             align-items: center;
