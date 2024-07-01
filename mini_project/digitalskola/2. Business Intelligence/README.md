@@ -17,7 +17,7 @@
             font-family: 'Courier New', Courier, monospace;
             color: #d14;
         }
-        center {
+        .center {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,9 +40,11 @@ In the second project I created Business Intelligence. I started the project on 
 
 ## Explanation
 ### 1. Tersedia Data Source dari Postgres
-<div class="center">
+<body>
+    <div class="center">
         <img src="https://drive.google.com/uc?id=1330a-5-KwO3mzlEWXpWFNhvElvm9fke2" alt="Deskripsi gambar" width="500" height="300">
-</div>
+    </div>
+</body>
 
         
 ## Contact
