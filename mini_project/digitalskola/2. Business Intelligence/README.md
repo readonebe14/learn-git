@@ -1,3 +1,21 @@
+<!--
+<style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+            position: relative;
+            margin: 20px 0;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d14;
+        }
+</style>
+-->
+
 # DE - Business Intelligence
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
