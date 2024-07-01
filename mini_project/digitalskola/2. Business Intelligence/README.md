@@ -35,7 +35,7 @@ In the second project I created Business Intelligence. I started the project on 
 ## Explanation
 ### 1. Tersedia Data Source dari Postgres
 <div align="center">
-    <img src="https://drive.google.com/uc?id=1330a-5-KwO3mzlEWXpWFNhvElvm9fke2" alt="Deskripsi gambar" width="500" height="300">
+    <img src="https://drive.google.com/uc?id=1330a-5-KwO3mzlEWXpWFNhvElvm9fke2" alt="2.1. Business Intelligence - Steps 1" width="700" height="500">
 </div>
 
 ## Contact
