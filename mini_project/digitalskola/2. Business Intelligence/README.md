@@ -29,12 +29,12 @@ In the second project I created Business Intelligence. I started the project on 
 - [Contact](#contact)
 
 ## Pre-requisites
-#### 1. Postgres
-#### 2. Airbyte
-#### 3. Snowflake
+### 1. Airbyte
+### 2. Snowflake
 
 ## Explanation
-### 1. 
+### 1. Tersedia Data Source dari Postgres
+<img src="https://drive.google.com/uc?id=1330a-5-KwO3mzlEWXpWFNhvElvm9fke2" alt="Deskripsi gambar" width="500" height="300">
 
         
 ## Contact
